@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio — Uchqun</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Page fade-in */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    /* Floating effect */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-[#0d0d0d] text-white font-sans opacity-0 animate-fadeIn">
+
+<!-- NAVBAR -->
+<nav class="flex gap-6 px-10 py-6 text-gray-300 text-lg border-b border-gray-800">
+  <a href="index.html" class="hover:text-white">Home</a>
+  <a href="about.html" class="hover:text-white">About</a>
+  <a href="portfolio.html" class="hover:text-white">Portfolio</a>
+  <a href="contact.html" class="hover:text-white">Contact</a>
+</nav>
+
+<!-- PAGE CONTENT -->
+<section class="max-w-6xl mx-auto mt-16 px-6">
+
+  <h1 class="text-5xl font-bold mb-12 animate-float">
+    Portfolio
+  </h1>
+
+  <p class="text-gray-400 text-lg max-w-3xl mb-12 leading-7">
+    This page showcases the most important moments of my journey — robotics 
+    competitions, scholarships, engineering work, cybersecurity practice, 
+    and everything that shaped my path toward MIT.  
+    Every project here represents effort, curiosity, and progress.  
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-12">
+
+    <!-- CARD 1 -->
+    <a href="astana.html" class="relative block bg-[#1a1a1a] p-10 rounded-2xl shadow-xl hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group overflow-hidden">
+      
+      <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-400 to-lime-500 
+                  opacity-0 group-hover:opacity-40 blur-xl transition-all duration-500"></div>
+
+      <h2 class="text-3xl font-semibold mb-3">Spike Robot Competition — Astana</h2>
+      <p class="text-gray-400 text-lg leading-7">
+        Represented Uzbekistan in international robotics competition. Learned teamwork,
+        engineering, mechanical design, and real strategy under pressure.
+      </p>
+    </a>
+
+    <!-- CARD 2 -->
+    <a href="almaty.html" class="relative block bg-[#1a1a1a] p-10 rounded-2xl shadow-xl hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group overflow-hidden">
+      
+      <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-400 to-indigo-500 
+                  opacity-0 group-hover:opacity-40 blur-xl transition-all duration-500"></div>
+
+      <h2 class="text-3xl font-semibold mb-3">Spike Robot Competition — Almaty</h2>
+      <p class="text-gray-400 text-lg leading-7">
+        Our team placed 2nd among international competitors and earned qualification
+        towards the Australia finals. Improved coding skills, motor control, and 
+        competition strategy.
+      </p>
+    </a>
+
+    <!-- CARD 3 -->
+    <a href="spacecamp.html" class="relative block bg-[#1a1a1a] p-10 rounded-2xl shadow-xl hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group overflow-hidden">
+      
+      <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-400 to-orange-500 
+                  opacity-0 group-hover:opacity-40 blur-xl transition-all duration-500"></div>
+
+      <h2 class="text-3xl font-semibold mb-3">Space Camp Scholarship — Turkey</h2>
+      <p class="text-gray-400 text-lg leading-7">
+        Earned a $1500 scholarship through a motivation-based application. Attended 
+        Space Camp Izmir for free and trained in astronautics, teamwork, 
+        mission simulations, and aerospace concepts.
+      </p>
+    </a>
+
+    <!-- CARD 4 -->
+    <a href="cyber.html" class="relative block bg-[#1a1a1a] p-10 rounded-2xl shadow-xl hover:scale-[1.03] hover:shadow-2xl transition-all duration-300 group overflow-hidden">
+      
+      <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-400 to-pink-500 
+                  opacity-0 group-hover:opacity-40 blur-xl transition-all duration-500"></div>
+
+      <h2 class="text-3xl font-semibold mb-3">Cybersecurity Projects</h2>
+      <p class="text-gray-400 text-lg leading-7">
+        Practicing networking, ports, TCP/UDP, reverse shells, Linux system control,
+        and ethical testing only on my own systems. Learning Kali Linux tools and 
+        real-world cybersecurity workflows.
+      </p>
+    </a>
+
+  </div>
+</section>
+
+</body>
+</html>

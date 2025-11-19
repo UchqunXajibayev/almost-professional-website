@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uchqun — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn { animation: fadeIn 0.9s ease-out forwards; }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+    .animate-float { animation: float 4s ease-in-out infinite; }
+  </style>
+</head>
+
+<body class="bg-black text-white font-sans opacity-0 animate-fadeIn">
+
+<nav class="flex justify-between items-center px-10 py-6 text-gray-300 border-b border-gray-800">
+  <div class="flex gap-8 text-lg">
+    <a href="index.html" class="hover:text-white">Home</a>
+    <a href="about.html" class="hover:text-white">About</a>
+    <a href="portfolio.html" class="hover:text-white">Portfolio</a>
+    <a href="contact.html" class="hover:text-white">Contact</a>
+  </div>
+</nav>
+
+<section class="max-w-6xl mx-auto mt-24 flex flex-col md:flex-row items-center gap-20 px-10">
+
+  <div>
+    <h1 class="text-5xl font-bold mb-6 animate-float">Uchqun</h1>
+    <p class="text-gray-400 text-lg mb-10 max-w-md leading-7">
+      Robotics • Cybersecurity • Engineering  
+      <br><br>
+      Driven by curiosity. Focused on building. Preparing for MIT.
+    </p>
+
+    <a href="portfolio.html" class="bg-green-500 hover:bg-green-600 text-black font-semibold px-6 py-3 rounded-lg transition">
+      Let's get started →
+    </a>
+  </div>
+
+  <div>
+    <img src="https://i.imgur.com/1Q9Z1Zm.png"
+         class="w-64 h-64 rounded-full object-cover shadow-xl border border-gray-700 animate-float">
+  </div>
+
+</section>
+
+</body>
+</html>
